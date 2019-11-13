@@ -1,2 +1,8 @@
 <h1><%= @user.name %></h1>
-<p>This is your page</p>
+<p>My Events</p>
+<% if @user.events.any? %>
+      <h3>Events (<%= @user.events.count %>)</h3>
+      <ol class="events">
+        <%= render @events %>
+      </ol>
+<% end %>
