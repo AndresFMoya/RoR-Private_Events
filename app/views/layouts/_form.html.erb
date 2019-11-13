@@ -1,10 +1,10 @@
 <%= form_for(@user) do |f| %>
 
-  <%= f.label :name %>
-  <%= f.text_field :name %>
+  <%= f.label :name %><br><br>
+  <%= f.text_field :name %><br><br>
 
-  <%= f.label :email %>
-  <%= f.email_field :email %>>
+  <%= f.label :email %><br><br>
+  <%= f.email_field :email %><br><br>
 
   <%= f.submit yield(:button_text) %>
 <% end %>
