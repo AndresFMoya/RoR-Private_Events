@@ -11,4 +11,12 @@
     </ol>
   <% end %>
 </div>
+<div>
+  <h3>Previous Events</h3>
+  <% if @prev_events.any? %>
+    <ol class="events">
+      <%= render @prev_events %>
+    </ol>
+  <% end %>
+</div>
 
