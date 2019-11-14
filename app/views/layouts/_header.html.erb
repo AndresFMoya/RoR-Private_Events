@@ -1,9 +1,11 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
   <% if logged_in? %>
-    <% unless action_name == "index" %>
-      <p><%= current_user.name %></p>
-    <% end %>
     <span><%= link_to "Log out", logout_path, method: :delete %></span>
+    <% if action_name == "index" %>
+      <span><%= link_to "Profile", current_user %></span>
+    <% elsif action_name == "show" %>
+      <span><%= link_to "Events", events_path %></span>
+    <% end %>
   <% else %>
     <span><%= link_to "Sign up", signup_path %></span>
   <% end %>
