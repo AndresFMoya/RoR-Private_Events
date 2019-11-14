@@ -1,10 +1,10 @@
 <h1>Event from <%= @user.name%></h1>
 <div>
   <p>My Attendees</p>
-  <% if @event.attendedevents.any? %>
-    <h3>Attendees (<%= @event.attendedevents.count %>)</h3>
-    <ol class="attendedevents">
-      <%= render @attendedevents %>
+  <% if @event.attendees.any? %>
+    <h3>Attendees (<%= @event.attendees.count %>)</h3>
+    <ol class="attendees">
+      <%= render @attendees %>
     </ol>
   <% end %>
 </div>

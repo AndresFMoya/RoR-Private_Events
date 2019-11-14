@@ -4,11 +4,10 @@
   <%= link_to 'Create a new event', new_event_path %>
 </div>
 <div>
-  <p>My Events</p>
-  <% if @user.events.any? %>
-    <h3>Events (<%= @user.events.count %>)</h3>
+  <h3>Upcoming Events</h3>
+  <% if @upcoming_events.any? %>
     <ol class="events">
-      <%= render @events %>
+      <%= render @upcoming_events %>
     </ol>
   <% end %>
 </div>

@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 2019_11_14_172331) do
     t.integer "creator_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["creator_id", "created_at"], name: "index_events_on_creator_id_and_created_at"
+    t.index "\"user_id\", \"created_at\"", name: "index_events_on_user_id_and_created_at"
   end
 
   create_table "users", force: :cascade do |t|
