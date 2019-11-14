@@ -1,8 +1,7 @@
 <h1><%= @user.name %></h1>
 <% provide(:button_text, 'Create an Event') %>
 <div>
-  <p>Create a new event:</p>
-  <%= render 'layouts/event-form', url: user_path(@user) %>
+  <%= link_to 'Create a new event', new_event_path %>
 </div>
 <div>
   <p>My Events</p>
