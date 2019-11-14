@@ -3,20 +3,5 @@
 <div>
   <%= link_to 'Create a new event', new_event_path %>
 </div>
-<div>
-  <h3>Upcoming Events</h3>
-  <% if @upcoming_events.any? %>
-    <ol class="events">
-      <%= render @upcoming_events %>
-    </ol>
-  <% end %>
-</div>
-<div>
-  <h3>Previous Events</h3>
-  <% if @prev_events.any? %>
-    <ol class="events">
-      <%= render @prev_events %>
-    </ol>
-  <% end %>
-</div>
+<%= render 'events/upcoming' %>
 

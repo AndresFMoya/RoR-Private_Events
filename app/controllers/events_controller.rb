@@ -15,7 +15,7 @@ class EventsController < ApplicationController
   end
 
   def show
-    @event  = Event.find(params[:id])
+    @event = Event.find(params[:id])
     @user = @event.creator
     @attendees = @event.attendees
   end
@@ -25,6 +25,16 @@ class EventsController < ApplicationController
 
   def index
     @events = Event.all
+    @upcoming_events = self.upcoming_events
+    @prev_events = self.prev_events
+  end
+
+  def upcoming_events
+    Event.where("date > ?", Time.now)
+  end
+
+  def prev_events
+    Event.where("date < ?", Time.now)
   end
 
   private
