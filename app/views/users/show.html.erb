@@ -1,8 +1,16 @@
 <h1><%= @user.name %></h1>
-<p>My Events</p>
-<% if @user.events.any? %>
-      <h3>Events (<%= @user.events.count %>)</h3>
-      <ol class="events">
-        <%= render @events %>
-      </ol>
-<% end %>
+<% provide(:button_text, 'Create an Event') %>
+<div>
+  <p>Create a new event:</p>
+  <%= render 'layouts/event-form', url: user_path(@user) %>
+</div>
+<div>
+  <p>My Events</p>
+  <% if @user.events.any? %>
+    <h3>Events (<%= @user.events.count %>)</h3>
+    <ol class="events">
+      <%= render @events %>
+    </ol>
+  <% end %>
+</div>
+

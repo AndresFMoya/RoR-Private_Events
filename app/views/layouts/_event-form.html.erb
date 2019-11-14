@@ -1,0 +1,5 @@
+<%= form_for(@event) do |f| %>
+  <%= f.label :description %><br><br>
+  <%= f.text_field :description %><br><br>
+  <%= f.submit yield(:button_text) %>
+<% end %>
