@@ -1,5 +1,4 @@
 class Event < ApplicationRecord
   belongs_to :creator, class_name: "User"
-  #has_many :users, through: :attended_events, foreign_key: "event_id"
-  has_many :attended_events, foreign_key: "attended_event", dependent: :destroy
+  has_many :attendedevents, class_name: "AttendedEvent", foreign_key: "attended_event_id", dependent: :destroy
 end
