@@ -26,4 +26,14 @@ RSpec.describe User, :type => :model do
     user = User.new(email: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com")
     expect(user).to_not be_valid
   end
+
+  it "should have many events" do
+    creator = User.reflect_on_association(:events)
+    expect(creator.macro).to eq(:has_many)
+  end
+
+  it "should have many attended events" do
+    attendee = User.reflect_on_association(:attendedevents)
+    expect(attendee.macro).to eq(:has_many)
+  end
 end
