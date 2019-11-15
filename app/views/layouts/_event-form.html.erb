@@ -1,6 +1,6 @@
 <%= form_for(@event) do |f| %>
   <%= f.label :date %><br><br>
-  <%= f.date_field :date, placeholder: "mm/dd/yyyy" %><br><br>
+  <%= f.date_select :date, placeholder: "mm/dd/yyyy" %><br><br>
 
   <%= f.label :description %><br><br>
   <%= f.text_field :description, placeholder: "Enter event description" %><br><br>
