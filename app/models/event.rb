@@ -5,4 +5,5 @@ class Event < ApplicationRecord
            class_name: "AttendedEvent",
            foreign_key: "attended_event_id",
            dependent: :destroy
+  validates :description, presence: true, length: { maximum: 100 }
 end
