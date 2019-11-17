@@ -60,6 +60,10 @@ h1 {
     font-size: 5rem;
     text-align: center;
   }
+  p {
+    font-size: 1.5rem;
+    text-align: center;
+  }
 }
 .ev-list {
   padding-top: 2rem;
@@ -88,5 +92,20 @@ h1 {
     padding-top: 1.5rem;
     text-align: center;
     width: 40%;
+  }
+}
+.atd {
+  margin-top: 5rem;
+}
+.attendees {
+  border: 1px solid rgb(25, 212, 234);
+  list-style-type: none;
+  margin: 0 auto;
+  margin-top: 2rem;
+  width: 40%;
+  li {
+    left: 40%;
+    padding: 0.5rem;
+    position: relative;
   }
 }
