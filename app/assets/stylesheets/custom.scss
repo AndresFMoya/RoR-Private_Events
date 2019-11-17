@@ -45,3 +45,44 @@ h1 {
     padding: 0.5rem;
   }
 }
+
+// Events
+.main {
+  border: 2px solid $sign-in;
+  margin: 0 auto;
+  margin-top: 5rem;
+  padding-bottom: 5rem;
+  width: 80%;
+  .create {
+    text-align: center;
+  }
+}
+.ev-list {
+  padding-top: 2rem;
+  margin: 0 auto;
+  width: 70%;
+  text-align: center;
+  h3 {
+    border: 1px solid $sign-in;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    width: 50%;
+  }
+  ol {
+    list-style-type: none;
+  }
+}
+.events {
+  padding: 1rem;
+  li {
+    border-bottom: 1px solid rgb(25, 212, 234);
+    font-size: 2rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    text-align: center;
+    width: 40%;
+  }
+}

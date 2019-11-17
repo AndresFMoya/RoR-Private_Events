@@ -7,8 +7,6 @@
       <span><%= link_to "Events", events_path %></span>
     <% end %>
   <% else %>
-    <% if action_name != "new" %>
-      <span><%= link_to "Sign up", signup_path %></span>
-    <% end %>
+    <span><%= link_to "Sign up", signup_path %></span>
   <% end %>
 </header>

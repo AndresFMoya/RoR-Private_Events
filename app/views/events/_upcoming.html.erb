@@ -1,16 +1,20 @@
-<div>
+<div class="ev-list">
   <h3>Upcoming Events</h3>
   <% if @upcoming_events.any? %>
     <ol class="events">
-      <%= render @upcoming_events %>
+      <% @upcoming_events.each do |event| %>
+        <li><%= render event %></li>
+      <% end %>
     </ol>
   <% end %>
 </div>
-<div>
+<div class="ev-list">
   <h3>Previous Events</h3>
   <% if @prev_events.any? %>
     <ol class="events">
-      <%= render @prev_events %>
+    <% @prev_events.each do |event| %>
+      <li><%= render event %></li>
+    <% end %>
     </ol>
   <% end %>
 </div>
