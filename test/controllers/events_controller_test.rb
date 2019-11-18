@@ -1,4 +1,6 @@
-require 'test_helper'
+# frozen_string_literal: true
+
+require "test_helper"
 
 class EventsControllerTest < ActionDispatch::IntegrationTest
   test "should get new" do
@@ -25,5 +27,4 @@ class EventsControllerTest < ActionDispatch::IntegrationTest
     get events_index_url
     assert_response :success
   end
-
 end

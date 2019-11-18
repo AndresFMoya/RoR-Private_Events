@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class User < ApplicationRecord
   include EventsHelper
   has_many :events, foreign_key: "creator_id", dependent: :destroy

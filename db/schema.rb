@@ -10,8 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_14_172331) do
+# frozen_string_literal: true
 
+ActiveRecord::Schema.define(version: 2019_11_14_172331) do
   create_table "attended_events", force: :cascade do |t|
     t.integer "attendee_id"
     t.integer "attended_event_id"
@@ -35,5 +36,4 @@ ActiveRecord::Schema.define(version: 2019_11_14_172331) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
-
 end

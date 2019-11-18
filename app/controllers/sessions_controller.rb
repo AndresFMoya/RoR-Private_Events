@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class SessionsController < ApplicationController
   def new
   end
@@ -5,11 +7,11 @@ class SessionsController < ApplicationController
   def create
     user = User.find_by(name: params[:session][:name])
     if user
-        log_in user
-        redirect_back_or user
+      log_in user
+      redirect_back_or user
     else
-      flash.now[:danger] = 'Invalid Username'
-      render 'new'
+      flash.now[:danger] = "Invalid Username"
+      render "new"
     end
   end
 

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module SessionsHelper
   # Logs in the given user.
   def log_in(user)
@@ -10,8 +12,8 @@ module SessionsHelper
     cookies.permanent.signed[:user_id] = user.id
   end
 
-   # Returns the current logged-in user (if any).
-   def current_user
+  # Returns the current logged-in user (if any).
+  def current_user
     if (user_id = session[:user_id])
       @current_user ||= User.find_by(id: user_id)
     elsif (user_id = cookies.signed[:user_id])

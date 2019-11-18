@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module EventsHelper
   def upcoming_events
     Event.where("date > ?", Time.now)
