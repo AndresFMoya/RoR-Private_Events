@@ -13,7 +13,7 @@ class EventsController < ApplicationController
       @event.attendees.create(attendee_id: current_user.id)
       redirect_to @event
     else
-      render "events/new"
+      render 'events/new'
     end
   end
 
@@ -23,8 +23,7 @@ class EventsController < ApplicationController
     @attendees = @event.attendees
   end
 
-  def destroy
-  end
+  def destroy; end
 
   def index
     @events = Event.all
@@ -33,11 +32,11 @@ class EventsController < ApplicationController
   end
 
   def upcoming_events
-    Event.where("date > ?", Time.now)
+    Event.where('date > ?', Time.now)
   end
 
   def prev_events
-    Event.where("date < ?", Time.now)
+    Event.where('date < ?', Time.now)
   end
 
   private
