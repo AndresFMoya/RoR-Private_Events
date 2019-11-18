@@ -5,7 +5,6 @@
       <span><%= link_to "Profile", current_user %></span>
     <% elsif action_name == "show" %>
       <span><%= link_to "Events", events_path %></span>
-      <span><%= link_to "Attendees", event_path %></span>
     <% end %>
   <% else %>
     <span><%= link_to "Sign up", signup_path %></span>
