@@ -8,15 +8,15 @@ class EventsController < ApplicationController
     @event = current_user.events.build(event_params)
     @user = current_user
     if @event.save
-      redirect_to @user
+      redirect_to @event
     else
       render "events/new"
     end
   end
 
   def show
-    @event = Event.find(params[:id])
-    @user = @event.creator
+    @event = current_user.events.find_by(id: params[:id])
+    @user = current_user
     @attendees = @event.attendees
   end
 

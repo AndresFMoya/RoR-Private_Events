@@ -4,6 +4,7 @@
     <ol class="events">
       <% @upcoming_events.each do |event| %>
         <li><%= render event %></li>
+        <li><%= link_to "GO", event %></li>
       <% end %>
     </ol>
   <% end %>
@@ -14,6 +15,7 @@
     <ol class="events">
     <% @prev_events.each do |event| %>
       <li><%= render event %></li>
+      <li><%= link_to "GO", event %></li>
     <% end %>
     </ol>
   <% end %>

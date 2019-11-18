@@ -1,5 +1,5 @@
 <div class="main">
-  <h1><%= @user.name%>'s Event Attendees</h1>
+  <h1><%= @event.description %></h1>
   <% if @event.attendees.any? %>
     <p class="atd">Number of attendees: <%= @event.attendees.count %></h3>
     <p>Event attendees are as follows:</p>
