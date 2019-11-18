@@ -39,7 +39,7 @@ module SessionsHelper
   end
 
   # Forgets a persistent session.
-  def forget(user)
+  def forget(_user)
     cookies.delete(:user_id)
   end
 end
