@@ -8,6 +8,7 @@ class EventsController < ApplicationController
     @event = current_user.events.build(event_params)
     @user = current_user
     if @event.save
+      @event.attendees.create(attendee_id:current_user.id)
       redirect_to @event
     else
       render "events/new"
