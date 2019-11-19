@@ -1,0 +1,12 @@
+<header>
+  <% if logged_in? %>
+    <span><%= link_to "Log out", logout_path, method: :delete %></span>
+    <% if action_name == "index" %>
+      <span><%= link_to "Profile", current_user %></span>
+    <% elsif action_name == "show" %>
+      <span><%= link_to "Events", events_path %></span>
+    <% end %>
+  <% else %>
+    <span><%= link_to "Sign up", signup_path %></span>
+  <% end %>
+</header>

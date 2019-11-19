@@ -1,0 +1,9 @@
+<div class="main">
+  <% provide(:button_text, 'Create an Event') %>
+  <div class="create">
+    <h1><%= @user.name %></h1>
+    <%= link_to 'Create a new event', new_event_path %>
+  </div>
+  <%= render 'events/upcoming' %>
+</div>
+

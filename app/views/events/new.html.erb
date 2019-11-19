@@ -1,0 +1,5 @@
+<div class="form">
+  <h1>Create a new event, <%= @user.name %></h1><br>
+  <% provide(:button_text, 'Create') %>
+  <%= render 'layouts/event-form', url: new_event_path(@event) %>
+<div>
