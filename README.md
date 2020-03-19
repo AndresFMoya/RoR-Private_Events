@@ -1,7 +1,21 @@
 # Private Events
 
   This project consist of building a site similar to a private Eventbrite which allows users to create events and then manage user signups. Users can create events and send invitations and parties (sound familiar?). Events take place at a specific date and at a location (which you can just store as a string, like “Andy’s House”).
-
+  
+  In this project, we will build a Web App with the following technologies:
+  - Ruby on Rails
+  - PostgreSQL
+  
+### Technologies used
+  
+  - Ruby on Rails
+  - RSpec
+  - PostgreSQL
+  - Git
+  - Bootstrap
+  - HTML & CSS
+  - Heroku
+  
 ## Getting started
   
   To get started with the app, first clone the repo and `cd` into the directory:
@@ -34,8 +48,31 @@
   ```
   $ rails server
   ```
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome! Feel free to check [issues page](https://github.com/AndresFMoya/RoR-Private_Events/issues).
+
+1. Fork it (https://github.com/AndresFMoya/RoR-Private_Events/fork)
+2. Create your working branch (git checkout -b [choose-a-name])
+3. Commit your changes (git commit -m 'what this commit will fix/add/improve')
+4. Push to the branch (git push origin [chosen-name])
+5. Create a new pull request
 
 ## Contributors
+[Kerron King](https://github.com/KerronKing)  
+[Andrés F. Moya](https://github.com/AndresFMoya)
 
-Kerron King [My GitHub Profile](https://github.com/KerronKing)
-Andres F. Moya [My GitHub Profile](https://github.com/AndresFMoya)
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## License
+
+This project is [MIT](https://github.com/AndresFMoya/RoR-Private_Events/blob/develop/LICENSE) licensed.
+
+## Contact
+- **Andrés Moya** - [@andresfmoya](https://github.com/andresfmoya) I will love to hear about you at one of the following places! :heart:
+
+- [LinkedIn](https://www.linkedin.com/in/andres-f-moya/)
+- [Twitter](https://www.twitter.com/andmedev/) 
+- <andresfmoya@gmail.com>.
